@@ -1,6 +1,6 @@
 // controllers/cart.controller.js
-const Cart = require('../models/Cart');
-const Product = require('../models/Product');
+const Cart = require('../cart.model');
+const Product = require('../product.model');
 
 exports.getCart = async (req, res) => {
   const userId = req.user.id;
